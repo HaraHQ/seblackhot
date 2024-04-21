@@ -1,0 +1,41 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "customer": {
+    "dataSource": "postgre",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "login": true,
+          "register": true
+        }
+      }
+    }
+  },
+  "menu": {
+    "dataSource": "postgre",
+    "public": true
+  },
+  "order": {
+    "dataSource": "postgre",
+    "public": true
+  },
+  "menu_order": {
+    "dataSource": "postgre",
+    "public": false
+  }
+}

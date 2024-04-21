@@ -1,0 +1,44 @@
+{
+  "name": "menu_order",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "menuId": {
+      "type": "number",
+      "required": true
+    },
+    "orderId": {
+      "type": "number",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": false
+    },
+    "count": {
+      "type": "number",
+      "required": false
+    },
+    "price": {
+      "type": "number",
+      "required": false
+    },
+    "subtotal": {
+      "type": "number",
+      "required": false
+    },
+    "createdAt": {
+      "type": "date"
+    },
+    "updatedAt": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
